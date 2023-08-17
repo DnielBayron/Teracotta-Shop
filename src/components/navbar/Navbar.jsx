@@ -1,6 +1,5 @@
 import React,  { useContext }  from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { ShoppingCart } from 'phosphor-react'
 import {AboutContext} from '../../context/about-context';
 import './Navbar.css';
 
@@ -23,7 +22,7 @@ const Navbar = () => {
         <NavLink to='/'>Shop</NavLink>
         </li>
         <li>
-        <NavLink to= '/cart'><ShoppingCart size= {25}/></NavLink>
+        <NavLink to= '/cart'><i class='bx bx-shopping-bag bx-sm'></i></NavLink>
         </li>
     </ul>
     

@@ -3,7 +3,6 @@ import {DATA} from '../../items';
 import { ShopContext } from "../../context/shop-context"
 import { CartItem } from './CartItem';
 import './cart.css';
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 
 
@@ -35,7 +34,7 @@ export const Cart = () => {
     <button onClick= {() => navigate("/")}>Continue Shopping</button>
     <button>Checkout</button>
       </div>
-    : <button className= "addToCartBttn" onClick={() => navigate("/")}><AddShoppingCartIcon fontSize='large'/></button>}
+    : <button className= "addToCartBttn" onClick={() => navigate("/")}><i class='bx bx-cart-add bx-lg' ></i></button>}
 
     </div>
   )
